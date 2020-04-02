@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> <canvas> 사용예</title>
+    <script>
+        window.addEventListener('load', function () {
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath(); 
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 200);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath(); 
+            ctx.moveTo(0, 200);
+            ctx.lineTo(200, 0);
+            ctx.stroke();
+            ctx.closePath();
+        });
+    </script>
+</head>
+<body>
+	<h1>&lt;canvas&gt; 사용예 (과제 #03-02)</h1>
+  	  <canvas width="200" height="200" id="canvas"></canvas>
+</body>
+<footer>
+ 웹프로그래밍2과목.김영휘의 예제 공간입니다.
+</footer>
+</html>
